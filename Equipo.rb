@@ -2,7 +2,7 @@ class Equipo
     attr_accessor :codigo_equipo, :nombre_equipo, :puntaje_total, :participantes_equipo
 
     def initialize(str_codigo_equipo, str_nombre_equipo, int_puntaje_total)
-        @codigo = str_codigo_equipo
+        @codigo_equipo = str_codigo_equipo
         @nombre_equipo = str_nombre_equipo
         @puntaje_total = int_puntaje_total
         @participantes_equipo = Array.new
@@ -16,13 +16,5 @@ class Equipo
         @participantes_equipo
     end
 
-    def getParticipante type
-        quantity = 0
-        for worker in @workers
-            if worker.type == type
-                quantity += 1
-            end
-        end
-        quantity
-    end
+    #metodo puntaje total del equipo
 end

@@ -17,7 +17,7 @@ RSpec.describe Equipo do
 
     context ", load participante" do
         it ", load one participante" do
-            competidor = Competidor.new "C001", "Daniel Larusso", 20, 0001, "Equipo Miyagi", "Verde", 10, 5, 1
+            competidor = Competidor.new "C001", "Daniel Larusso", 20, 0001, "Verde", 10, 5, 1
             @equipo.loadParticipante competidor
             expect(@equipo.getParticipantesEquipo[0].codigo).to eql "C001"
             expect(@equipo.getParticipantesEquipo[0]).to have_attributes(nombre: 'Daniel Larusso')
