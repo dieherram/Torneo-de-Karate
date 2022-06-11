@@ -3,7 +3,7 @@ require_relative 'Competidor'
 RSpec.describe Competidor do
     context ", test competidor initialize" do
         before(:each) do
-            @competidor_test = Competidor.new "C001", "Daniel Larusso", 20, 0001, "Equipo Miyagi", "Verde", 10, 5, 1
+            @competidor_test = Competidor.new "C001", "Daniel Larusso", 20, 0001, "Verde", "E001", "Equipo Miyagi"
         end
 
         it ", check instance" do 
