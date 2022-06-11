@@ -1,27 +1,30 @@
 class Equipo
-    attr_accessor :puntaje_total, :participantes_equipo
+    attr_accessor :puntaje_total, :competidores_equipo
 
     def initialize(int_puntaje_total)
         @puntaje_total = int_puntaje_total
-        @participantes_equipo = Array.new
+        @competidores_equipo = Array.new
     end
 
-    def loadParticipante competidor
-        @participantes_equipo.push(competidor)
+    def loadCompetidor competidor
+        @competidores_equipo.push(competidor)
     end
 
-    def getParticipantesEquipo
-        @participantes_equipo
+    def getCompetidoresEquipo
+        @competidores_equipo
     end
 
-    def getParticipanteById id
-        for participante in @participantes_equipo
-            if participante.id == id
-                @equipo.getParticipantesEquipo[].name
+=begin
+    def getCompetidorByDni dni
+        for competidor in @competidores_equipo
+            if competidor.dni == dni
         end      
     end
-
+    competidor.nombre
     end
-    #Puntaje = (partidas ganadas) * 4 + (partidas empatadas) * 3 
-    #metodo puntaje total del equipo
+=end
+    
 end
+
+#Puntaje = (partidas ganadas) * 4 + (partidas empatadas) * 3 
+    #metodo puntaje total del equipo
